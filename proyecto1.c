@@ -15,6 +15,7 @@
 #include <gtk/gtk.h>
 
 // Declaracion de variables
+
 GtkWidget *buttons[3][3];  // Matriz que almacena las casillas
 char turno = 'X';          // Indica el turno actual si 'X' o 'O'
 int movimientos = 0;       // Contador de movimientos realizados
