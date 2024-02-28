@@ -9,8 +9,8 @@
 // subdominio encontrado.
 
 // Integrantes: Antony Brenes Rodriguez / C11238
-              Josué Rodríguez Mora    / C26646
-              Allan Villalobos Rojas  / C28447
+//             Josué Rodríguez Mora    / C26646
+//            Allan Villalobos Rojas  / C28447
 
 #include <stdio.h>
 #include <stdlib.h>
