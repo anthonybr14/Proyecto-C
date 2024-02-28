@@ -1,3 +1,17 @@
+// Proyecto C / Parte 1
+
+// Descripcion: Este programa tiene como objetivo
+// ejecutar un juego llamado Gato, donde se ejecuta
+// una plantilla con 9 casillas. Al presionar cada casilla
+// este cambia su imagen por una 'X' o 'O'. Hasta que se forme
+// una linea horizontal, vertical o diagonal de la misma
+// letra el juego termina.
+
+// Integrantes: Antony Brenes Rodriguez / C11238
+//             Josué Rodríguez Mora    / C26646
+//             Allan Villalobos Rojas  / C28447
+
+
 #include <gtk/gtk.h>
 
 // Declaracion de variables
