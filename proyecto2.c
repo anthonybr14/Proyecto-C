@@ -133,7 +133,7 @@ int main() {
     fprintf(gnuplot, "set ylabel 'y'\n");  // Establece la etiqueta del eje y
     fprintf(gnuplot, "plot 'datos.dat' using 1:2 with lines title 'Función 1', \
                                     'datos.dat' using 1:3 with lines title 'Función 2', \
-                                    %lf title 'Error <= %.2lf'\n", inicio, porcentaje_error); Traza las funcione
+                                    %lf title 'Error <= %.2lf'\n", inicio, porcentaje_error); //Traza las funcione
 
     // Funcion que cierra el script de GNUplot
     
