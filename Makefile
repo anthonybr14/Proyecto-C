@@ -3,7 +3,9 @@ CFLAGS=`pkg-config --cflags gtk+-3.0`
 LFLAGS=`pkg-config --libs gtk+-3.0`
 SRC1=proyecto1.c
 SRC2=proyecto2.c
-EXE=exe
+EXE1=exe_proyecto1.c
+EXE2=exe_proyecto2.c
+
 
 # Target para compilar proyecto1.c
 p1:
@@ -15,6 +17,4 @@ p2:
 
 # Target para limpiar lo archivos generados
 clean:
-      rm -f $(EXE)
-  
-  
+      rm -f $(EXE1) $(EXE2)
