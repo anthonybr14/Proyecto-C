@@ -1,3 +1,17 @@
+// Proyecto C / Parte 2
+
+// Descripcion: Este programa tiene como objetivo
+// solicitarle al usuario dos funciones cuadraticas
+// para posteriormente solicitarle un porcentaje de error 
+// (0-100) y calcular un subdominio donde la diferencia entre
+// ambas funciones no supere el porcentaje de error.
+// Seguidamente se grafica las funciones junto con el
+// subdominio encontrado.
+
+// Integrantes: Antony Brenes Rodriguez / C11238
+              Josué Rodríguez Mora    / C26646
+              Allan Villalobos Rojas  / C28447
+
 #include <stdio.h>
 #include <stdlib.h>
 
