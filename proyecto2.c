@@ -118,23 +118,25 @@ int main() {
         double y2 = evaluar_cuadratica(funcion2, x);  // Evalua la segunda funcion
         fprintf(datos, "%lf %lf %lf\n", x, y1, y2);  // Imprime los valores
     }
-    fclose(datos);
+    fclose(datos);  // Cierra el archivo de datos
 
     // Generar el script de GNUplot para graficar los datos
-    FILE *gnuplot = popen("gnuplot -persist", "w");
+    
+    FILE *gnuplot = popen("gnuplot -persist", "w");  // Abre un proceso de GNUplot en modo persistente
     if (gnuplot == NULL) {
-        fprintf(stderr, "Error al abrir GNUplot\n");
+        fprintf(stderr, "Error al abrir GNUplot\n");  // Comprueba si el proceso de GNUplot fue correcto
         return 1;
     }
 
-    fprintf(gnuplot, "set title 'Funciones Cuadráticas'\n");
-    fprintf(gnuplot, "set xlabel 'x'\n");
-    fprintf(gnuplot, "set ylabel 'y'\n");
+    fprintf(gnuplot, "set title 'Funciones Cuadráticas'\n");  // Establce el titulo del grafico
+    fprintf(gnuplot, "set xlabel 'x'\n");  // Establece la etiqueta del eje x
+    fprintf(gnuplot, "set ylabel 'y'\n");  // Establece la etiqueta del eje y
     fprintf(gnuplot, "plot 'datos.dat' using 1:2 with lines title 'Función 1', \
                                     'datos.dat' using 1:3 with lines title 'Función 2', \
-                                    %lf title 'Error <= %.2lf'\n", inicio, porcentaje_error);
+                                    %lf title 'Error <= %.2lf'\n", inicio, porcentaje_error); Traza las funcione
 
-    // Cerrar el script de GNUplot
+    // Funcion que cierra el script de GNUplot
+    
     fflush(gnuplot);
     fprintf(gnuplot, "exit\n");
     pclose(gnuplot);
