@@ -1,2 +1,2 @@
 # Proyecto-C
-Este repositorio contiene los archivos para el proyecto c, respectivamente, para la parte 1 y 2.
+Este repositorio contiene los archivos para el proyecto c, respectivamente, proyecto1.c, proyecto2.c y un archivo Makefile.
